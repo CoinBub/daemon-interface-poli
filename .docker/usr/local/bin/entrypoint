@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ ! -f /home/poli/.POLI/POLI.conf ];
+then
+    echo "rpcuser=$(whoami)" >> /home/poli/.POLI/POLI.conf
+    echo "rpcpassword=$(pwgen 64 1)" >> /home/poli/.POLI/POLI.conf
+    cat /home/poli/.POLI/POLI.conf
+fi
+
+exec "$@"
