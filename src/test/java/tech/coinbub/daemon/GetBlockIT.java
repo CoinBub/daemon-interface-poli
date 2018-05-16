@@ -19,7 +19,7 @@ import static tech.coinbub.daemon.testutils.BeanPropertyMatcher.property;
 import tech.coinbub.daemon.testutils.Dockerized;
 
 @ExtendWith(Dockerized.class)
-public class TestGetBlock {
+public class GetBlockIT {
     @Test
     public void supportsShortTransactionList(final Poli poli) {
         final Block block = poli.getblock("da381cce924f5865a8cd21d59c972376b8920262a19b436f8c1113b8f9416d9a");

@@ -15,7 +15,7 @@ import tech.coinbub.daemon.poli.TransactionDetail;
 import tech.coinbub.daemon.testutils.Dockerized;
 
 @ExtendWith(Dockerized.class)
-public class TestSendToAddress {
+public class SendToAddressIT {
     public static final String VALID_ADDRESS = "mm1PNXvwUo9PB7eScmoNyTjz93Wwt6qwDM";
 
     @Test
