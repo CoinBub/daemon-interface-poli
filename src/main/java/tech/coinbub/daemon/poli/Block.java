@@ -32,6 +32,8 @@ public class Block {
     public String modifier;
     public String modifierv2;
     public List<Transaction> tx;
+    // Only present in 3c2700446a627004ad8f2403daec030b780495523ed6a11013be54cc999134a1. Unable to replicate presently
+    public String signature;
 }
 
 //poli@test:~$ polid getblock da381cce924f5865a8cd21d59c972376b8920262a19b436f8c1113b8f9416d9a
