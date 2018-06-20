@@ -10,6 +10,11 @@ import tech.coinbub.daemon.poli.TransactionDetail;
 public class NormalizedPoli implements Normalized<Poli> {
     private final Poli client;
 
+    @Override
+    public String getSymbol() {
+        return Poli.SYMBOL;
+    }
+
     public NormalizedPoli(final Poli client) {
         this.client = client;
     }

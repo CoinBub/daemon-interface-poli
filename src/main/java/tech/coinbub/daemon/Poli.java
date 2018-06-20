@@ -83,6 +83,7 @@ import tech.coinbub.daemon.poli.Transaction;
  * verifymessage <POLIaddress> <signature> <message>
  */
 public interface Poli {
+    public static final String SYMBOL = "POLI";
     /**
      * `getnewaddress [account]`
      * 
